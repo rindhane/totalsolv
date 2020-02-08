@@ -3,25 +3,20 @@
 totalsolv
 =====
 
-totalsolv is a simple Django app to support the problem resolution for customers.
+totalsolv is a simple flask app to showcase the statistics dashboard. 
 
 Detailed documentation is in the "docs" directory.
 
 Quick start
 -----------
 
-1. Add "totalsolv" to your INSTALLED_APPS setting like this::
+1. Download the directory using git clone command.
+2. Enter the directory through command prompt ::
+    
+    cd totalsolv
 
-    INSTALLED_APPS = [
-        totalsolv.apps.TotalsolvConfig,
-    ]
-
-2. Include the polls URLconf in your project urls.py like this::
-
-    url('^', include('django.contrib.auth.urls')),
-    url(r'^accounts/login/$', auth_views.LoginView.as_view(template_name='totalsolv/login.html')),
-    url(r'^totalsolv/',include('totalsolv.urls')),
-
-3. Run `python manage.py migrate` to create the polls models.
-
-4. Visit http://127.0.0.1:8000/totalsolv/ to enter into the app.
+3. Run the following command in the prompt to start the flask server ::
+    
+    python worldbank.py
+    
+4. Visit http://127.0.0.1:3001/ to check the app within the browser.
