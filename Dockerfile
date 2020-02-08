@@ -1,4 +1,4 @@
-FROM python:3.8.1-alpine3.11
+FROM amancevice/pandas:1.0.0-alpine
 COPY requirements.txt /
 RUN pip3 install -r /requirements.txt
 
