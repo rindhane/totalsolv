@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: bb-site
-        image: irahul1/trial_site:0.2
+        image: irahul1/trial_site:0.7
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort : 3001
@@ -34,3 +34,4 @@ spec:
     port: 6000
     targetPort: 3001
     nodePort: 30001
+

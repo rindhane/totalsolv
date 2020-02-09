@@ -1,13 +1,12 @@
-FROM python:3.8.1-alpine3.11
+FROM python:3.7.6-slim-buster
 COPY requirements.txt /
-RUN apk add --no-cache --virtual .build-deps \
-    gcc \
-    && pip3 install --no-cache -r /requirements.txt \
-    && apk del --no-cache .build-deps
-
+RUN pip3 install --index-url=https://www.piwheels.org/simple  --no-cache-dir -r /requirements.txt \
+    && apt-get update \
+    && apt-get install --no-install-recommends --yes libatlas-base-dev  \ 
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN mkdir /setup
 COPY . /setup
 WORKDIR /setup
 
 EXPOSE 3001
-CMD ["python", "-m", "worldbank.py", ]
+CMD python3 -m worldbank.py
