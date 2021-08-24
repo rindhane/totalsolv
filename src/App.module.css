@@ -1,0 +1,31 @@
+.app {
+  display:flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  width: 100vw;
+  height:10vh;
+  background-color: red;
+}
+
+.layout{
+  display: flex;
+  flex-direction: row;
+}
+
+.list {
+  display:flex;
+  flex-direction:column;
+  width:30vw;
+  height:80vh;
+  background-color: greenyellow;
+}
+
+.footer{
+  display: flex;
+  width: 100vw;
+  height:10vh;
+  background-color: black;
+}

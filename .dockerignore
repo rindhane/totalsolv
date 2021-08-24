@@ -1,6 +1,11 @@
-.git
-**__pycache__*
-.dockerignore
+.git/
+__pycache__
 app.yaml
 .gitignore
 app.yaml
+pyenv/
+.ipynb_checkpoints/
+node_modules/
+pyenv/ 
+*.pyc
+.vscode/

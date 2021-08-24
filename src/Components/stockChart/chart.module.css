@@ -1,0 +1,9 @@
+
+.chartLayout {
+    display:flex;
+    flex-grow: 3;
+} 
+
+.chartPiece {
+    margin: 10px;
+}
